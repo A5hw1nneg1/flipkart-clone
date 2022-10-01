@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    background-color: #172337;
+    color: white;
+}
+header{
+    display: flex;
+    background-color: #2874f0;
+    color: white;
+    height: 56px;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+header img{
+    height: 32px;
+    width: 110px;
+    padding: 0 10px;
+}
+.headerlist{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.headerlist li{
+    list-style: none;
+    padding: 10px;
+}
+.headerlist li:hover{
+    font-style: bold;
+    color: antiquewhite; 
+}
+.search{
+    height: 30px;
+    width: 35.482vw;
+}
+.search img{
+position: absolute;
+top: 20px;
+height: 20px;
+width: 20px;
+left: 58.268vw;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #2874f0;
+    padding: 2px;
+    width: 7.878vw;
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+    position: relative;
+    right: 0.161vw;
+    height: 12px;
+}
+.cart{
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    left: 91.146vw;
+}
+.container img{
+    margin-top: 5px;
+    width: 100vw;
+    cursor: pointer;
+}
+.listitem{
+    height: 200px;
+    width: 200px;
+    margin: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.slider{
+    margin: 10px auto;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #4185f4;
+    height: 300px;
+    width: 1500px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.item p{
+    text-align: center;
+    color: white;
+}
+.item img{
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+}
+.item img:hover{
+    height: 230px;
+    width: 230px;
+}
+@media screen and (max-width: 1500px){
+    /* body{
+
+        background-color: green;
+    } */
+    .search img{
+        display: none;
+    }
+    .cart{
+        display: none;
+    }
+}
+@media screen and (max-width: 700px){
+    /* body{
+
+        background-color: green;
+    } */
+    /* .search img{
+        display: none;
+    }
+    .cart{
+        display: none;
+    } */
+    header{
+        flex-direction: column;
+        height: 118px;
+    }
+    .container img{
+        width: 700px;
+    }
+    .container{
+        overflow: scroll;
+    }
+}
